@@ -7,8 +7,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.Objects;
-
 public class spawnCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -17,8 +15,7 @@ public class spawnCommand implements CommandExecutor {
 
             if(args.length == 0) {
 
-                player.teleport(Objects.requireNonNull(player.getServer().getWorld("world")).getSpawnLocation());
-                player.sendMessage(ChatColor.YELLOW + "Sent to Spawn");
+                player.teleport(player.getWorld().getSpawnLocation());
 
             } else if(args.length == 1) {
 
@@ -29,9 +26,7 @@ public class spawnCommand implements CommandExecutor {
 
                     if(targetPlayer != null) {
 
-                        targetPlayer.teleport(Objects.requireNonNull(targetPlayer.getServer().getWorld("world")).getSpawnLocation());
-                        targetPlayer.sendMessage(ChatColor.YELLOW + "Sent to Spawn by " + player.getDisplayName());
-                        player.sendMessage(ChatColor.YELLOW + "Sent " + targetPlayer.getDisplayName() + " to Spawn");
+                        targetPlayer.teleport(targetPlayer.getWorld().getSpawnLocation());
 
                     } else {
 
