@@ -12,3 +12,6 @@ commands:
   spawn:
     description: send a player to world spawn
     usage: /<command>
+  tp:
+    description: teleport to a player
+    usage: /<command>

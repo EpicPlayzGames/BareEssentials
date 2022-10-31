@@ -1,6 +1,7 @@
 package me.epicplayzgames.bareessentials;
 
 import me.epicplayzgames.bareessentials.lib.utils.registerCommand;
+import me.epicplayzgames.bareessentials.lib.utils.registerListeners;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BareEssentials extends JavaPlugin {
@@ -13,6 +14,7 @@ public final class BareEssentials extends JavaPlugin {
         getServer().getPluginManager().enablePlugin(bareEssentials);
 
         new registerCommand().RegisterCommands();
+        new registerListeners().RegisterListeners();
 
     }
 
