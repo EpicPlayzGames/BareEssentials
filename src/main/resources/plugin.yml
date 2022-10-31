@@ -1,0 +1,14 @@
+name: BareEssentials
+version: '${project.version}'
+main: me.epicplayzgames.bareessentials.BareEssentials
+api-version: 1.19
+authors: [ EpicPlayzGames ]
+description: BareEssentials plugin for a personal server
+website: https://www.github.com/EpicPlayzGames
+commands:
+  home:
+    description: send a player home
+    usage: /<command>
+  spawn:
+    description: send a player to world spawn
+    usage: /<command>
