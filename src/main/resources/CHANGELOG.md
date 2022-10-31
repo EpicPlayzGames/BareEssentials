@@ -14,3 +14,9 @@
 ### Added Listeners:
 - Player join Listener
 - Player leave listener
+
+## Version 1.0.2
+
+### Edited Commands:
+- Spawn Command
+  - Changed to target overworld spawn only
